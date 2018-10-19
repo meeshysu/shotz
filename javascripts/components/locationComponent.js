@@ -1,9 +1,7 @@
-
-
 const locationBuilder = (arrayOfLocations) => {
     let stringBuilder = '';
     arrayOfLocations.forEach((location) => {
-    stringBuilder += `<div class="movieCard">
+      stringBuilder += `<div class="locationCard">
          <div class="card-group">
         <div class="card">
               <img class="card-img-top" src="${location.image}" alt="Card image cap">
@@ -18,7 +16,5 @@ const locationBuilder = (arrayOfLocations) => {
     });
  $('#locationSpace').append(stringBuilder);
 };
-
-
 
 export { locationBuilder };

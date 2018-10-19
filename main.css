@@ -1,3 +1,13 @@
 body {
     background-color: green;
 }
+
+#locationSpace {
+    display: flex; 
+    flex-direction: row;
+    margin: 5%;
+}
+
+.movieCard {
+    margin: 5%;
+}

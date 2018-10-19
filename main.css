@@ -1,3 +1,17 @@
 body {
     background-color: green;
 }
+
+#locationSpace {
+    display: flex; 
+    flex-direction: row;
+    margin: 5%;
+}
+
+#movieSpace {
+    max-width: 45%;
+}
+
+.movieCard, .locationCard {
+    margin: 5%;
+}

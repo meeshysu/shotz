@@ -1,0 +1,28 @@
+{
+    "locations": [
+        {
+            "image": "../images/Chinatown.png",
+            "name": "Spice Hunting",
+            "location": "China Town",
+            "shootTime": "Evening"
+        },
+        {
+            "image": "../images/Rabbits.png",
+            "name": "Corn Sowing",
+            "location": "The Grasslands",
+            "shootTime": "Morning"
+        },
+        {
+            "image": "../images/Theater.png",
+            "name": "Popcorn G",
+            "location": "Movie Theater",
+            "shootTime": "After Dark"
+        },
+        {
+            "image": "../images/Finn.png",
+            "name": "Baby Finn <3",
+            "location": "Land of Ooo",
+            "shootTime": "Afternoon"
+        }
+    ]
+}

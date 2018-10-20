@@ -10,4 +10,4 @@ $.get('../db/movie.json')
     });
 }
 
-export { movieData }
+export { movieData };

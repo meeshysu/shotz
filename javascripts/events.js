@@ -1,8 +1,8 @@
 
 const filterSearch = () => {
     $('#searchBar').keyup(() => {
-        $('.card-locations').each(function(){
-            let val = $('#searchBar').value().toLowerCase();
+        $('.cardInfo').each(function(){
+            let val = $('#searchBar').val().toLowerCase();
             if($(this).text().toLowerCase().includes(val) === true) {
                 $(this.closest('.locationsOfMovie')).show();
             } else {
@@ -15,8 +15,8 @@ const filterSearch = () => {
 
 const filterButtons = () => {
     $(".timeOfDay").on('click', (e) => {
-        const element = $(event.target).text().toLowerCase();
-        $(".shoot-time").each(function () {
+        const element = $(e.target).text().toLowerCase();
+        $(".shootTime").each(function () {
             if($(this).text().toLowerCase().includes(element) === true) {
                 $(this.closest('.locationsOfMovie')).show();
             } else {
@@ -26,13 +26,9 @@ const filterButtons = () => {
     })
 }
 
-$('#every').on('click', (e) => {
-    $('.locationCard').show();
+$('#every').on('click', () => {
+    $('.locationsOfMovie').show();
 })
 
-export { filterSearch, filterButtons }
+export {  filterButtons, filterSearch }
 
-
-
-    // $("#searchBar").on("keyup", function() {
-    //     let value = $(this).val().toLowerCase();

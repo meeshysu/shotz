@@ -10,4 +10,4 @@ $.get('../db/locations.json')
     });
 }
 
-export { locationData }
+export { locationData };

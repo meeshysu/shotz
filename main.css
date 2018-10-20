@@ -8,10 +8,10 @@ body {
     margin: 5%;
 }
 
-#movieSpace {
-    max-width: 45%;
+#movieSpace, #locationsOfMovie {
+    max-width: 35%;
 }
 
-.movieCard, .locationCard {
+.movieCard {
     margin: 5%;
 }

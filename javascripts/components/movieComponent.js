@@ -2,7 +2,7 @@ const movieBuilder = (arrayOfMovie) => {
     let stringBuilder = '';
     arrayOfMovie.forEach((movie) => {
         stringBuilder += `<div class="movieCard">
-        <div class="card-group ml-4">
+        <div class="card-group">
        <div class="card">
              <img class="card-img-top" src="${movie.image}" alt="Card image cap">
                  <div class="card-body">

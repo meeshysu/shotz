@@ -1,5 +1,6 @@
 body {
-    background-color: green;
+    background-image: url();
+    background-position: fill;
 }
 
 #locationSpace {
@@ -8,10 +9,21 @@ body {
     margin: 5%;
 }
 
-#movieSpace, #locationsOfMovie {
+#locationsOfMovie {
     max-width: 35%;
+    margin: 1%;
 }
 
 .movieCard {
-    margin: 5%;
+    max-width: 35%;
+    margin: auto;
+}
+
+#buttonDiv {
+    margin: 1%;
+}
+
+.navbar {
+    background-image: url(images/Spices.png);
+    align-content: center;
 }

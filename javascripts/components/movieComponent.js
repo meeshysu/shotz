@@ -1,21 +1,18 @@
 const movieBuilder = (arrayOfMovie) => {
     let stringBuilder = '';
     arrayOfMovie.forEach((movie) => {
-        stringBuilder += `<div class="movieCard">
-        <div class="card-group ml-4">
-       <div class="card">
-             <img class="card-img-top" src="${movie.image}" alt="Card image cap">
+        stringBuilder += `<div class="card movieCard">
+
                  <div class="card-body">
                     <h5 class="card-title">${movie.name}</h5>
-                    <p class="card-text">${movie.genre}</p>
-                    <p class="card-text">${movie.estimatedRelease}</p>
-                   <p class="card-text"><small class="text-muted">${movie.description}</small></p>
+                    <p class="card-text">Genre: ${movie.genre}</p>
+                    <p class="card-text">Estimated Release Date: ${movie.estimatedRelease}</p>
+                   <p class="card-text">Description: ${movie.description}</p>
                  </div>
-             </div>
-           </div>
          </div>`
     });
 $('#movieSpace').append(stringBuilder);
 };
 
 export { movieBuilder };
+

@@ -1,6 +1,7 @@
 {
     "movie": [
         {
+            "image": "../images/Popcorn.png",
             "name": "Honey the popcorn is too spicy: A love story.",
             "genre": "Action and Romance",
             "estimatedRelease": "October 2019",

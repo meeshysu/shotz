@@ -1,5 +1,6 @@
 import { locationBuilder } from "../components/locationComponent.js";
 
+const locationData = () => {
 $.get('../db/locations.json')
     .done((data) => {
         locationBuilder(data.locations)
@@ -7,3 +8,6 @@ $.get('../db/locations.json')
     .fail((error) => {
         console.error(error);
     });
+}
+
+export { locationData };

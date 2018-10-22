@@ -8,12 +8,18 @@ const filterSearch = () => {
 
 
 const filterButtons = () => {
-    $(document).ready(function() {
-        $('.timeOfDay').on('click', (e) => {
-            $('.locationsOf').not(`:contains(${location.shootTime})`).fadeOut();
+    $(".timeOfDay").on('click', (e) => {
+        const click = $(e.target).text().toLowerCase();
+        $(".shootTime").each(function () {
+            if ($(this).text().toLowerCase().includes(click) === true) {
+                $(this.closest('.locationsOf')).show();
+            } else {
+                $(this.closest('.locationsOf')).fadeOut();
+            }
         })
     })
-};
+
+    };
 
 
 export { filterButtons, filterSearch }

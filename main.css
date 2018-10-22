@@ -26,6 +26,7 @@ body {
 .navbar {
     background-image: url(images/Spices.png);
     align-content: center;
+    height: 100px;
 }
 
 .addedClass {

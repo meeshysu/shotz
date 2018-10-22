@@ -12,9 +12,9 @@ const filterButtons = () => {
         const element = $(e.target).text().toLowerCase();
         $(".shootTime").each(function () {
             if ($(this).text().toLowerCase().includes(element) === true) {
-                $(this.closest('.locationsOfMovie')).show();
+                $(this.closest('.locationsOf')).show();
             } else {
-                $(this.closest('.locationsOfMovie')).hide();
+                $(this.closest('.locationsOf')).hide();
             }
         })
     })

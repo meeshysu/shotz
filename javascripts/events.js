@@ -9,8 +9,14 @@ const filterSearch = () => {
 
 const filterButtons = () => {
     $(".body").on('click', '#morning', (e) => {
-      $('.locationsOf').show();
-      $('.locationsOf').not('.Morning').fadeOut();
+      $('#locationSpace').addClass(function( index, currentClass) {
+          let addedClass;
+        if (currentClass === '.Morning') {
+            addedClass.show();
+        } else {
+            
+        }
+      })
     })
 }
 

@@ -8,21 +8,13 @@ const filterSearch = () => {
 
 
 const filterButtons = () => {
-    $(".timeOfDay").on('click', (e) => {
-        const element = $(e.target).text().toLowerCase();
-        $(".shootTime").each(function () {
-            if ($(this).text().toLowerCase().includes(element) === true) {
-                $(this.closest('.locationsOf')).show();
-            } else {
-                $(this.closest('.locationsOf')).hide();
-            }
+    $(document).ready(function() {
+        $('.timeOfDay').on('click', (e) => {
+            $('.locationsOf').not(`:contains(${location.shootTime})`).fadeOut();
         })
     })
 };
 
-$('#every').on('click', () => {
-    $('.locationsOfMovie').show();
-})
 
 export { filterButtons, filterSearch }
 

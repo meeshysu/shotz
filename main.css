@@ -27,3 +27,7 @@ body {
     background-image: url(images/Spices.png);
     align-content: center;
 }
+
+.addedClass {
+    display: none;
+}

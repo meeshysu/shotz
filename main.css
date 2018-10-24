@@ -4,13 +4,13 @@ body {
 }
 
 #locationSpace {
-    display: flex; 
-    flex-direction: row;
+    display: inline-block;
     margin: 5%;
 }
 
 #locationsOfMovie {
-    max-width: 35%;
+    display: inline-block;
+    max-width: 30%;
     margin: 1%;
 }
 

@@ -1,7 +1,8 @@
 const locationBuilder = (arrayOfLocations) => {
     let stringBuilder = '';
     arrayOfLocations.forEach((location) => {
-      stringBuilder += `<div id="locationsOfMovie" class="card locationsOf ${location.shootTime}">
+      stringBuilder += 
+        `<div id="locationsOfMovie" class="card locationsOf ${location.shootTime}">
             <img class="card-img-top" src="${location.image}" alt="Card image cap">
                 <div class="card-body card-locations">
                      <h5 class="card-title">${location.name}</h5>

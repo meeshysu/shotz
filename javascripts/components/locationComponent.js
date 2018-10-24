@@ -16,4 +16,7 @@ const locationBuilder = (arrayOfLocations) => {
  $('#locationSpace').append(stringBuilder);
 };
 
+
+
 export { locationBuilder };
+

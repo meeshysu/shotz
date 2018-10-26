@@ -1,6 +1,6 @@
-const movieBuilder = (arrayOfMovie) => {
+const movieBuilder = (arrayOfMovies) => {
     let stringBuilder = '';
-    arrayOfMovie.forEach((movie) => {
+    arrayOfMovies.forEach((movie) => {
         stringBuilder += `
         <div class="card movieCard">
             <img class="card-img-top" src="${movie.image}" alt="Card image cap">
@@ -15,5 +15,14 @@ const movieBuilder = (arrayOfMovie) => {
 $('#movieSpace').append(stringBuilder);
 };
 
-export { movieBuilder };
+const initializeMovieBoard = () => {
+    movieData().then((movies) => {
+        //need to return the second promise here
+        return movieBuilder(movies);
+    }).catch((error) => {
+        console.error(error);
+    })
+}
+
+export { movieBuilder, initializeMovieBoard };
 

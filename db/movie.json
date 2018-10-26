@@ -1,5 +1,5 @@
 {
-    "movie": [
+    "movies": [
         {
             "id": "movie1",
             "image": "../images/Popcorn.png",

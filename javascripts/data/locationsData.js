@@ -1,13 +1,46 @@
-import { locationBuilder } from "../components/locationComponent.js";
+// const loadLocationsForMovies = () => {
+//     return new Promise((resolve, reject) => {
+//         $.get('../db/locations.json')
+//         .done((data) => {
+//             resolve(data.locations);
+//         })
+//         .fail((error) => {
+//             reject(error);
+//         })
+//     })
+// };
 
-const locationData = () => {
-$.get('../db/locations.json')
-    .done((data) => {
-        locationBuilder(data.locations)
+locationArray = []
+
+const loadLocationsOnMovieCard = (moviesWithLocations) => {
+    locationArray = []
+    return new Promise((resolve, reject) => {
+        $.get('../db/locations.json')
+        .done((data) => {
+            moviesWithLocations = forEach((moviesWithLocation => {
+                data.locations.forEach((location) => {
+                    if (location.id === moviesWithLocation) {
+                        locationArray.push(location)
+                    }
+                })
+            })
+            resolve(locationArray)
+        })
     })
-    .fail((error) => {
-        console.error(error);
+}     
+
+
+const loadLocations = () => {
+    return new Promise((resolve, reject) => {
+        $.get('../db/Locations.json')
+        .done(data => {
+            resolve(data.locations);
+        })
+        .fail(error => {
+            reject(error);
+        })
     });
 }
 
-export { locationData };
+
+export { loadLocations, loadLocationsForMovies, loadLocationsOnMovieCard };}

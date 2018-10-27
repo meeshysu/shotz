@@ -1,12 +1,9 @@
-import { filterButtons, filterSearch } from "./events.js";
-import { locationData } from "./data/locationsData.js";
-import { movieData } from "./data/movieData.js";
+import { initializeMovieBoard } from './components/movieComponent.js';
+import { initializeLocationBoard } from './components/locationComponent.js';
 
 
 const initializeApp = () => {
-    filterButtons();
-    filterSearch();
-    movieData();
-    locationData();
+    initializeMovieBoard();
+    initializeLocationBoard();
 };
 initializeApp();

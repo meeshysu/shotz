@@ -2,6 +2,7 @@
     "locations": [
         {   
             "id": "location1",
+            "movie_id": 1,
             "image": "../images/Chinatown.png",
             "name": "Spice Hunting",
             "location": "China Town",
@@ -9,6 +10,7 @@
         },
         {   
             "id": "location2",
+            "movie_id": 1,
             "image": "../images/Rabbits.png",
             "name": "Corn Sowing",
             "location": "The Grasslands",
@@ -16,6 +18,7 @@
         },
         {
             "id": "location3",
+            "movie_id": 1,
             "image": "../images/Theater.png",
             "name": "Popcorn G",
             "location": "Movie Theater",
@@ -23,6 +26,7 @@
         },
         {
             "id": "location4",
+            "movie_id": 2,
             "image": "../images/Finn.png",
             "name": "Baby Finn <3",
             "location": "Land of Ooo",
@@ -30,6 +34,7 @@
         },
         {
             "id": "location5",
+            "movie_id": 2,
             "image": "../images/Finn.png",
             "name": "Baby Finn <3",
             "location": "Land of Ooo",
@@ -37,6 +42,7 @@
         },
         {
             "id": "location6",
+            "movie_id": 2,
             "image": "../images/Finn.png",
             "name": "Baby Finn <3",
             "location": "Land of Ooo",
@@ -44,6 +50,7 @@
         },
         {
             "id": "location7",
+            "movie_id": 3,
             "image": "../images/Finn.png",
             "name": "Baby Finn <3",
             "location": "Land of Ooo",
@@ -51,34 +58,39 @@
         },
         {
             "id": "location8",
+            "movie_id": 3,
             "image": "../images/Finn.png",
             "name": "Baby Finn <3",
             "location": "Land of Ooo",
             "shootTime": "Afternoon"
         },
         {
-            "id": "location5",
+            "id": "location9",
+            "movie_id": 3,
             "image": "../images/Finn.png",
             "name": "Baby Finn <3",
             "location": "Land of Ooo",
             "shootTime": "Afternoon"
         },
         {
-            "id": "location6",
+            "id": "location10",
+            "movie_id": 3,
             "image": "../images/Finn.png",
             "name": "Baby Finn <3",
             "location": "Land of Ooo",
             "shootTime": "Afternoon"
         },
         {
-            "id": "location7",
+            "id": "location11",
+            "movie_id": 1,
             "image": "../images/Finn.png",
             "name": "Baby Finn <3",
             "location": "Land of Ooo",
             "shootTime": "Afternoon"
         },
         {
-            "id": "location8",
+            "id": "location12",
+            "movie_id": 2,
             "image": "../images/Finn.png",
             "name": "Baby Finn <3",
             "location": "Land of Ooo",

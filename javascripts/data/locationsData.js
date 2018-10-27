@@ -1,38 +1,46 @@
-import { locationBuilder } from "../components/locationComponent.js";
-
-const locationData = () => {
-    return new Promise((resolve, reject) => {
-        $.get('../db/locations.json')
-            .done((data) => {
-                locationBuilder(data.locations)
-            })
-            .fail((error) => {
-                console.error(error);
-            });
-    }
-    )
-};
-
-
-const initializeLocationBoard = () => {
-    locationData().then((locations) => {
-        //need to return the second promise here
-        return locationBuilder(locations);
-    }).catch((error) => {
-        console.error(error);
-    })
-};
-
-
-// const loadMoviesOnBoards = (movies) => {
-//     return new Promise ((resolve, reject) => {
-//         $.get('../db/movie.json')
+// const loadLocationsForMovies = () => {
+//     return new Promise((resolve, reject) => {
+//         $.get('../db/locations.json')
 //         .done((data) => {
-//             const boardsWithMovies
+//             resolve(data.locations);
+//         })
+//         .fail((error) => {
+//             reject(error);
 //         })
 //     })
 // };
 
+locationArray = []
+
+const loadLocationsOnMovieCard = (moviesWithLocations) => {
+    locationArray = []
+    return new Promise((resolve, reject) => {
+        $.get('../db/locations.json')
+        .done((data) => {
+            moviesWithLocations = forEach((moviesWithLocation => {
+                data.locations.forEach((location) => {
+                    if (location.id === moviesWithLocation) {
+                        locationArray.push(location)
+                    }
+                })
+            })
+            resolve(locationArray)
+        })
+    })
+}     
 
 
-export { locationData, initializeLocationBoard };
+const loadLocations = () => {
+    return new Promise((resolve, reject) => {
+        $.get('../db/Locations.json')
+        .done(data => {
+            resolve(data.locations);
+        })
+        .fail(error => {
+            reject(error);
+        })
+    });
+}
+
+
+export { loadLocations, loadLocationsForMovies, loadLocationsOnMovieCard };}

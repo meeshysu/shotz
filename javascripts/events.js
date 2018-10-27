@@ -32,17 +32,5 @@ const filterButtons = () => {
 }
 
 
-// SINGLE OUT MOVIE CARD
-
-const showSingleMovieCard = () => {
-    $('#movieSpace').on('click', '.movieCard', (e) => {
-        const movieToClick = $(e.target).closest('.movieCard').attr('id');
-        $('#movieSpace').hide;
-        $('#locationSpace').show;
-    showSingleMovieCard(movieToClick);
-    })
-   
-}
-
 export { filterButtons, filterSearch }
  

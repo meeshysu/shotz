@@ -1,6 +1,15 @@
+import { loadLocationsForMovies } from '../data/locationsData.js';
+
+const bindEvents = () => {
+    $('#toPageBtn').click(() => {
+        $('#moviePage').show();
+        $('#locationSpace').hide();
+    })
+}
+
 const locationBuilder = (arrayOfLocations) => {
     let stringBuilder = '';
-    arrayOfLocations.forEach((location) => {
+    arrayOfLocations.forEach(location => {
       stringBuilder += 
         `<div id="locationsOfMovie" class="card locationsOf ${location.shootTime}">
             <img class="card-img-top" src="${location.image}" alt="Card image cap">
@@ -13,10 +22,19 @@ const locationBuilder = (arrayOfLocations) => {
             </div>
         </div>`;
     });
- $('#locationSpace').append(stringBuilder);
+ $('#locationSpace').append(stringBuilder); 
 };
 
 
 
-export { locationBuilder };
+const initializeLocationBoard = () => {
+    loadLocationsForMovies()
+    .then((locations) => {
+        locationBuilder(locations);
+    }).catch((error) => {
+        console.error(error);
+    })
+};
+
+export { locationBuilder, initializeLocationBoard };
 

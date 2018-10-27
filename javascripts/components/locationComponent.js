@@ -23,7 +23,7 @@ const locationBuilder = (arrayOfLocations) => {
 
 
 const initializeLocationBoard = () => {
-    loadLocationsForMovies()
+    loadLocationsForMovies()  
     .then((locations) => {
         locationBuilder(locations);
     }).catch((error) => {

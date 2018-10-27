@@ -1,11 +1,6 @@
 import { loadLocationsForMovies } from '../data/locationsData.js';
 
-const bindEvents = () => {
-    $('#toPageBtn').click(() => {
-        $('#moviePage').show();
-        $('#locationSpace').hide();
-    })
-}
+
 
 const locationBuilder = (arrayOfLocations) => {
     let stringBuilder = '';
@@ -28,7 +23,7 @@ const locationBuilder = (arrayOfLocations) => {
 
 
 const initializeLocationBoard = () => {
-    loadLocationsForMovies()
+    loadLocationsForMovies()  
     .then((locations) => {
         locationBuilder(locations);
     }).catch((error) => {

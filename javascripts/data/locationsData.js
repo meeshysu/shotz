@@ -1,46 +1,44 @@
-// const loadLocationsForMovies = () => {
-//     return new Promise((resolve, reject) => {
-//         $.get('../db/locations.json')
-//         .done((data) => {
-//             resolve(data.locations);
-//         })
-//         .fail((error) => {
-//             reject(error);
-//         })
-//     })
-// };
+// import {locationBuilder} from '../components/locationComponent.js';
 
-locationArray = []
-
-const loadLocationsOnMovieCard = (moviesWithLocations) => {
-    locationArray = []
+const loadLocationsForMovies = () => {
     return new Promise((resolve, reject) => {
         $.get('../db/locations.json')
-        .done((data) => {
-            moviesWithLocations = forEach((moviesWithLocation => {
-                data.locations.forEach((location) => {
-                    if (location.id === moviesWithLocation) {
-                        locationArray.push(location)
-                    }
-                })
+            .done((data) => {
+                // console.log(data.locations)
+                resolve(data.locations);
             })
-            resolve(locationArray)
-        })
+            .fail((error) => {
+                reject('error on loadLocationsForMovies', error);
+            })
     })
-}     
+};
 
+let randomAssArrayForLocations = []
 
-const loadLocations = () => {
+const matchUpLocations = (doesntMatterLocationAray) => {
+    randomAssArrayForLocations = []
+    console.log(doesntMatterLocationAray)
     return new Promise((resolve, reject) => {
-        $.get('../db/Locations.json')
-        .done(data => {
-            resolve(data.locations);
-        })
-        .fail(error => {
-            reject(error);
-        })
-    });
+        $.get('../db/locations.json')
+            .done((data) => {
+                doesntMatterLocationAray.forEach((forEachId) => {
+                    data.locations.forEach((locationObject) => {
+                        if (location.id === forEachId) {
+                            randomAssArrayForLocations.push(locationObject)
+                            console.log(randomAssArrayForLocations)
+                        }
+                    })
+                })
+                resolve(randomAssArrayForLocations)
+            })
+            .fail((error) => {
+                reject('error on matchUpLocations', error);
+            })
+    })
 }
 
+//loop thru each id of array and also loop thru locations. 
+//if the location.id equals the single forEachId
 
-export { loadLocations, loadLocationsForMovies, loadLocationsOnMovieCard };}
+
+export { loadLocationsForMovies, matchUpLocations };

@@ -4,31 +4,32 @@ const loadMovies = () => {
     return new Promise((resolve, reject) => {
         $.get('../db/movie.json')
             .done((data) => {
-                movieBuilder(data.movies)
+                resolve(data.movies)
             })
             .fail((error) => {
-                console.error(error);
+                reject('error on loadMovies', error);
             });
     }
     )
 };
 
-const loadMoviesAndLocations = (movieId) => {
-    let moviesWithLocations = '';
+const getMoviesFromLocationArray = (movieId) => {
+    let movieLocationsYeah = '';
     return new Promise((resolve, reject) => {
         $.get('../db/movie.json')
         .done((data) => {
             data.movies.forEach((movie) => {
-                if (movieId === movie.movieId) {
-                    moviesWithLocations = movie.location_id;
+                if(movieId === movie.id) {
+                    movieLocationsYeah = movie.locations;
+                    console.log(movieLocationsYeah)
                 }
             })
-            resolve(moviesWithLocations);
+            resolve(movieLocationsYeah);
         })
         .fail((error) => {
-            reject('error on loadMoviesAndLocations', error)
+            reject('error on getMoviesFromLocationArray', error);
         })
     })
 }
-
-export { loadMovies, loadMoviesAndLocations };
+//all of this shit is literally just getting your array of location ids for the movies. so if movieId is equal to the actual id of the movie then just goes to movie.locations. .locations returns that string/array whatever. that thing. 
+export { loadMovies, getMoviesFromLocationArray };

@@ -7,7 +7,7 @@
             "genre": "Action and Romance",
             "estimatedRelease": "October 2019",
             "description": "In Pawnee, Indiana, two friends Tom and Izzy, who loved to watch Adventure Time together, accidentally spilled cayenne pepper all over their popcorn. The accident became a surprising and delightfully tasty treat, but one that they found to be addictive. This obsession for spicy popcorn led them to create a business together, hunting down the best spices from China Town and sowing the sweetest of corn. And as they worked together, these two individuals realized just how much they loved popcorn... and each other. In this tasty romance and action film, Tom and Izzy fight the trials of business conflicts, warriors of spice, traveling to the Land of Ooo and finding the hottest pepper known to man. Only a wuss wouldn't watch this.",
-            "locations_id": ["location1", "location2", "location3", "location4"]
+            "locations": ["location1", "location2", "location3", "location4"]
         },
         {
             "id": "movie2",
@@ -16,7 +16,7 @@
             "genre": "Action and Romance",
             "estimatedRelease": "October 2019",
             "description": "Blah blah",
-            "locations_id": ["location5", "location6", "location7", "location8"]
+            "locations": ["location5", "location6", "location7", "location8"]
         },
         {
             "id": "movie3",
@@ -25,7 +25,7 @@
             "genre": "Action and Romance",
             "estimatedRelease": "October 2019",
             "description": "Blah blah",
-            "locations_id": ["location9", "location10", "location11", "location12"]
+            "locations": ["location9", "location10", "location11", "location12"]
         }
     ]
 }

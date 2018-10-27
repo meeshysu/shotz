@@ -1,14 +1,5 @@
-import { loadMovies, loadMoviesAndLocations} from '../data/movieData.js';
+import { loadMovies } from '../data/movieData.js';
 import { initializeLocationBoard } from '../components/locationComponent.js';
-
-const bindEvents = () => {
-    $('#movieSpace').on('click', '.movieCard', (e) => {
-        const clickedMovieId = $(e.target).closest('.movieCard').attr('id');
-        $('#moviePage').hide();
-        $('#locationSpace').show();
-        initializeLocationBoard(clickedMovieId);
-    })
-}
 
 
 const movieBuilder = (arrayOfMovies) => {
@@ -39,7 +30,6 @@ const initializeMovieBoard = () => {
         console.error(error);
     })
 }
-
 
 
 export { movieBuilder, initializeMovieBoard };

@@ -1,46 +1,29 @@
-// const loadLocationsForMovies = () => {
-//     return new Promise((resolve, reject) => {
-//         $.get('../db/locations.json')
-//         .done((data) => {
-//             resolve(data.locations);
-//         })
-//         .fail((error) => {
-//             reject(error);
-//         })
-//     })
-// };
+import { locationBuilder } from '../components/locationComponent.js'
 
-locationArray = []
-
-const loadLocationsOnMovieCard = (moviesWithLocations) => {
-    locationArray = []
+const loadLocationsForMovies = () => {
     return new Promise((resolve, reject) => {
         $.get('../db/locations.json')
         .done((data) => {
-            moviesWithLocations = forEach((moviesWithLocation => {
-                data.locations.forEach((location) => {
-                    if (location.id === moviesWithLocation) {
-                        locationArray.push(location)
-                    }
-                })
-            })
-            resolve(locationArray)
+            locationBuilder(data.locations);
         })
-    })
-}     
-
-
-const loadLocations = () => {
-    return new Promise((resolve, reject) => {
-        $.get('../db/Locations.json')
-        .done(data => {
-            resolve(data.locations);
-        })
-        .fail(error => {
+        .fail((error) => {
             reject(error);
         })
-    });
-}
+    })
+};
 
 
-export { loadLocations, loadLocationsForMovies, loadLocationsOnMovieCard };}
+// const loadLocations = () => {
+//     return new Promise((resolve, reject) => {
+//         $.get('../db/Locations.json')
+//         .done(data => {
+//             resolve(data.locations);
+//         })
+//         .fail(error => {
+//             reject(error);
+//         })
+//     });
+// }
+
+
+export { loadLocationsForMovies };

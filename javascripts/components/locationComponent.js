@@ -1,11 +1,6 @@
 import { loadLocationsForMovies } from '../data/locationsData.js';
 
-const bindEvents = () => {
-    $('#toPageBtn').click(() => {
-        $('#moviePage').show();
-        $('#locationSpace').hide();
-    })
-}
+
 
 const locationBuilder = (arrayOfLocations) => {
     let stringBuilder = '';

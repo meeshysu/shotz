@@ -29,7 +29,7 @@ const movieBuilder = (arrayOfMovies) => {
                  </div>
          </div>`;
     });
-$('#movieSpace').append(stringBuilder);
+$('#movieSpace').html(stringBuilder);
 };
 
 

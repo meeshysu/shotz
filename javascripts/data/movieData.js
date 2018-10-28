@@ -1,4 +1,3 @@
-import { movieBuilder } from "../components/movieComponent.js"
 
 const loadMovies = () => {
     return new Promise((resolve, reject) => {
@@ -21,7 +20,7 @@ const getMoviesFromLocationArray = (movieId) => {
             data.movies.forEach((movie) => {
                 if(movieId === movie.id) {
                     movieLocationsYeah = movie.locations;
-                    // console.log(movieLocationsYeah)
+                    console.log(movieLocationsYeah)
                 }
             })
             resolve(movieLocationsYeah);

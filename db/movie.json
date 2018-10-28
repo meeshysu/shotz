@@ -10,7 +10,7 @@
            "locations": ["location1", "location2", "location3", "location4"]
        },
        {
-           "id": "movie2",
+           "movie": "movie2",
            "image": "../images/rice.jpg",
            "name": "Putting the Spice Back in the Rice",
            "genre": "Action and Thriller",
@@ -19,7 +19,7 @@
            "locations": ["location5", "location6", "location7", "location8"]
        },
        {
-           "id": "movie3",
+           "movie": "movie3",
            "image": "../images/Boom1.jpg",
            "name": "The Spice Asteroid",
            "genre": "SyFy and Action",

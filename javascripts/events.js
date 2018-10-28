@@ -1,10 +1,17 @@
 //SEARCH BAR FILTER
 const filterSearch = () => {
-    $('#searchBar').keypress(function () {
-        let filter = $(this).val().toUpperCase();
-        $('.locationsOf').not(`:contains(${filter})`).fadeOut();
-    })
+ $('#searchBar').keypress(function () {
+   let filter = $(this).val();
+    $('.locationsOf').not(`:contains(${filter})`).fadeOut();
+})
 }
+
+// $('#searchBar').keyup(() => {
+//     $('.locationsOf').each(function () {
+//         let filter = $('#searchBar').filter().toLowerCase;
+//         $('.locationsOf').not(`:contains(${filter})`).hide();
+//     })
+// })
 
 
 // BUTTONS FILTER

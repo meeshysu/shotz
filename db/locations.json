@@ -2,7 +2,6 @@
     "locations": [
         {
             "id": "location1",
-            "movieAssociated": "movie1",
             "image": "../images/Chinatown.png",
             "name": "Spice Hunting",
             "location": "China Town",
@@ -24,9 +23,9 @@
         },
         {
             "id": "location4",
-            "image": "../images/Finn.png",
-            "name": "Baby Finn <3",
-            "location": "Land of Ooo",
+            "image": "../images/DailyMarket.jpg",
+            "name": "The Daily Market",
+            "location": "Detroit",
             "shootTime": "Afternoon"
         },
         {

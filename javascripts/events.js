@@ -9,7 +9,7 @@ const filterSearch = () => {
 
 
 // BUTTONS FILTER
-const filterButtons = () => {
+
    $('#morning').click(() => {
        $('.locationsOf').show();
        $('.locationsOf').not('.Morning').hide();
@@ -29,8 +29,8 @@ const filterButtons = () => {
        $('#every').click(() => {
        $('.locationsOf').show();
 });
-}
 
 
-export { filterButtons, filterSearch }
+
+export { filterSearch }
  

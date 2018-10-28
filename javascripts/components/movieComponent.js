@@ -9,7 +9,7 @@ const bindEvents = () => {
         $('#moviePage').hide(); //so can hide everything you would like to on the page besides just the movie div
         $('#buttonDiv').hide();
         loadMoviesSomethingDifferent(clickedMovieId);
-        console.log(clickedMovieId);
+        // console.log(clickedMovieId);
     })
 }
 
@@ -25,7 +25,7 @@ const movieBuilder = (arrayOfMovies) => {
                     <p class="card-text">Genre: ${movie.genre}</p>
                     <p class="card-text">Estimated Release Date: ${movie.estimatedRelease}</p>
                    <p class="card-text">Description: ${movie.description}</p>
-                   
+ 
                  </div>
          </div>`;
     });
@@ -39,7 +39,7 @@ const initializeMovieBoard = () => {
         movieBuilder(movies)
         bindEvents();
     }).catch((error) => {
-        console.error(error);
+        console.error("initializeMovieBoard error", error);
     })
 }
 
@@ -49,11 +49,13 @@ const loadMoviesSomethingDifferent = (movieId) => {
         return matchUpLocations(movieLocationsArray);
     })
     .then((moviesAndTheirLocations) => {//just throw in another parameter
-        locationBuilder(moviesAndTheirLocations)
+        locationBuilder(moviesAndTheirLocations);
     })
+    // .catch((error) => {
+    //     console.error('error on LoadMoviesSomething', error);
+    // })
 }
 
 
 
 export { movieBuilder, initializeMovieBoard };
-/* <p class="card-text">Description: ${movie.location.length}</p> */

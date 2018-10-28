@@ -15,15 +15,17 @@ const loadLocationsForMovies = () => {
 
 let randomAssArrayForLocations = []
 
-const matchUpLocations = (doesntMatterLocationAray) => {
-    randomAssArrayForLocations = []
-    console.log(doesntMatterLocationAray)
+const matchUpLocations = (movieLocationArray) => {
+    let  randomAssArrayForLocations = []
+    // console.log(doesntMatterLocationAray)
     return new Promise((resolve, reject) => {
         $.get('../db/locations.json')
             .done((data) => {
-                doesntMatterLocationAray.forEach((forEachId) => {
+                // console.log(data)
+                movieLocationArray.forEach((forEachId) => {
                     data.locations.forEach((locationObject) => {
                         if (location.id === forEachId) {
+                            // console.log(forEachId)
                             randomAssArrayForLocations.push(locationObject)
                             console.log(randomAssArrayForLocations)
                         }

@@ -4,23 +4,26 @@ body {
 }
 
 #locationSpace {
-    display: inline-block;
     margin: 5%;
+    margin-left: 15%;
 }
 
-#locationsOfMovie {
+.locationsOf {
     display: inline-block;
-    max-width: 30%;
+    align-content: center;
+    max-width: 20%;
     margin: 1%;
 }
 
 .movieCard {
-    max-width: 35%;
+    max-width: 25%;
     margin: auto;
 }
 
 #buttonDiv {
-    margin: 1%;
+    display: flex;
+    justify-content: center;
+    margin: 3%;
 }
 
 .navbar {
@@ -35,6 +38,11 @@ body {
     flex-wrap: wrap;
 }
 
-.hideStuff {
-    display: none;
+.card-img-top {
+    max-height: 35%;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
 }

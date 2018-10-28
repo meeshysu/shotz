@@ -1,13 +1,14 @@
-
+//SEARCH BAR FILTER
 const filterSearch = () => {
     $('#searchBar').keypress(function () {
-        let filter = $(this).val();
+        let filter = $(this).val().toUpperCase();
         $('.locationsOf').not(`:contains(${filter})`).fadeOut();
     })
 }
 
 
-const filterButtons = () => {
+// BUTTONS FILTER
+
    $('#morning').click(() => {
        $('.locationsOf').show();
        $('.locationsOf').not('.Morning').hide();
@@ -17,17 +18,17 @@ const filterButtons = () => {
        $('.locationsOf').not('.Afternoon').hide();
    });
    $('#evening').click(() => {
-    $('.locationsOf').show();
-    $('.locationsOf').not('.Evening').hide();
+       $('.locationsOf').show();
+       $('.locationsOf').not('.Evening').hide();
    });
    $('#afterDark').click(() => {
-    $('.locationsOf').show();
-    $('.locationsOf').not('.After').hide();
+       $('.locationsOf').show();
+       $('.locationsOf').not('.After').hide();
    });
-   $('#every').click(() => {
-    $('.locationsOf').show();
+       $('#every').click(() => {
+       $('.locationsOf').show();
 });
-}
 
-export { filterButtons, filterSearch }
- 
+
+
+export { filterSearch }

@@ -9,31 +9,34 @@
 </head>
 <body>
 <!--NAVBAR-->
-    <nav class="navbar navbar-dark bg-dark">
-      
-    </nav>
+    <nav class="navbar navbar-dark bg-dark"></nav>
+    <div class="banner"><img src="images/BannerSpice.png" alt=""></div>
 
 
 <!--FILTER BUTTONS-->
 <div id="buttonDiv">
-<button type="button" id="morning" class="btn btn-success timeOfDay">Morning</button>
-<button type="button" id="afternoon" class="btn btn-success timeOfDay">Afternoon</button>
-<button type="button" id="evening" class="btn btn-success timeOfDay">Evening</button>
-<button type="button" id="afterDark" class="btn btn-success timeOfDay">After Dark</button>
-<button type="button" id="every" class="btn btn-success timeOfDay">All Times</button>
+<button type="button" id="morning" class="btn btn-success timeOfDay m-1">Morning</button>
+<button type="button" id="afternoon" class="btn btn-success timeOfDay m-1">Afternoon</button>
+<button type="button" id="evening" class="btn btn-success timeOfDay m-1">Evening</button>
+<button type="button" id="afterDark" class="btn btn-success timeOfDay m-1">After Dark</button>
+<button type="button" id="every" class="btn btn-success timeOfDay m-1">All Times</button>
 </div>
 <br>
 
+<!--SEARCH BAR-->
 <form class="form-inline">      
-    <input id="searchBar" class="searchInput form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <input id="searchBar" class="searchInput form-control mr-3 offset-1" type="search" placeholder="Search" aria-label="Search">
 </form>
-
-
+<br>
+<div id="moviePage" class="pageContainer">
 <!--MOVIE CARD-->
 <div id="movieSpace" class="cards1"></div>
+</div>
 
 <!--LOCATION CARDS-->
-<div id="locationSpace"></div>
+<div id="locationSpace" class="locationPage">
+    
+</div>
 
 
 

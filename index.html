@@ -23,15 +23,22 @@
 </div>
 <br>
 
-<!--SEARCH BAR-->
-<form class="form-inline">      
-    <input id="searchBar" class="searchInput form-control mr-3 offset-1" type="search" placeholder="Search" aria-label="Search">
-</form>
-<br>
 <div id="moviePage" class="pageContainer">
 <!--MOVIE CARD-->
 <div id="movieSpace" class="cards1"></div>
 </div>
+
+
+<div id="selectedMovie" class="hidden">
+    <button type="button" class="btn btn-success" id="back" onClick="window.location.reload()">Return To Home</button> 
+</div>
+
+<!--SEARCH BAR-->
+<form class="form-inline md-form form-sm active-orange active-orange-2 offset-2 mt-4">
+    <i class="fa fa-search" aria-hidden="true"></i>
+    <input id="searchBar" class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search">
+  </form>
+
 
 <!--LOCATION CARDS-->
 <div id="locationSpace" class="locationPage">

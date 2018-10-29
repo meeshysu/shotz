@@ -1,32 +1,32 @@
 {
     "movies": [
         {
-            "id": "movie1",
-            "image": "../images/Popcorn.png",
-            "name": "Honey the popcorn is too spicy: A love story.",
-            "genre": "Action and Romance",
-            "estimatedRelease": "October 2019",
-            "description": "In Pawnee, Indiana, two friends Tom and Izzy, who loved to watch The Office together, accidentally spilled cayenne pepper all over their popcorn. The accident became a surprising and delightfully tasty treat, but one that they found to be addictive. This obsession for spicy popcorn led them to create a business together, hunting down the best spices from China Town and sowing the sweetest of corn. And as they worked together, these two individuals realized just how much they loved popcorn... and each other. In this tasty romance and action film, Tom and Izzy fight the trials of business conflicts (and fluffy bunnies dressed in suits), warriors of spice and traveling through the wild lands of Thailand to find the hottest and oldest pepper known to man... guarded by the Lara Croft. Only a wuss wouldn't watch this.",
-            "locations": ["location1", "location2", "location3", "location4"]
-        },
-        {
-            "id": "movie2",
-            "image": "../images/rice.jpg",
-            "name": "Putting the Spice Back in the Rice",
-            "genre": "Action and Thriller",
-            "estimatedRelease": "May 2021",
-            "description": "Tachki Banana has lived in China Town for many years, running the family Spice Store that had been handed down from her mother, who in turn was given to by her mother. Her spices are the purest that one could buy for miles and for a good price. Or so that was until black market spices arrived in China Town. Large kilos of spices were being sold behind doors. Tachki saught help from the local authorities to be turned down - laughed at. This old woman knew nothing! Illegal spices? That was ridiculous! Angry and frustrated, Tachki decided she would take it in her hands. One by one, the old lady that people had dismissed, took down leaders in the spice exchange. Tachki Banana became the Batman of China Town. A super hero with a cane. It was her duty to project the spices.",
-            "locations": ["location5", "location6", "location7", "location8"]
-        },
-        {
-            "id": "movie3",
-            "image": "../images/Boom1.jpg",
-            "name": "The Spice Asteroid",
-            "genre": "SyFy and Action",
-            "estimatedRelease": "July 2020",
-            "description": "In this riveting sequel to 'Honey the popcorn is too spicy: A love story.' and 'Putting the Spice Back in the Rice', their knowledge of their past events and experiences will be tested. As they all stood in the China Town streets, they watched as the fiery ball of spice shoot from the sky. An asteriod made of spices! It was beautiful... beautifully deadly. Even as it flew through the sky, spices fell from the trail that it left. It landed in a thick cloud that destroyed buildings and people. Death by spices. In this movie, a newly founded trio who had discovered their taste for the unusual, banded together to save the people of their town. After the defeat of raqueteers and Lara Croft, Tom, Izzy and Takchi used their magical spice weilding intuition to clear a pathway. And made lots of popcorn and rice.",
-            "locations": ["location9", "location10", "location11", "location12"]
-        }
-    ]
-}
+           "id": "movie1",
+           "image": "../images/Popcorn.png",
+           "name": "The Popcorn is Spicy: A Love Story.",
+           "genre": "Action and Romance",
+           "estimatedRelease": "October 2019",
+           "description": "In Pawnee, Indiana, two friends Tom and Izzy, who loved to watch The Office together, accidentally spilled cayenne pepper all over their popcorn. The accident became a surprising and delightfully tasty treat, but one that they found to be addictive. This obsession for spicy popcorn led them to create a business together, hunting down the best spices from China Town and sowing the sweetest of corn. And as they worked together, these two individuals realized just how much they loved popcorn... and each other. In this tasty romance and action film, Tom and Izzy fight the trials of business conflicts (and fluffy bunnies dressed in suits), warriors of spice and traveling through the wild lands of Thailand to find the hottest and oldest pepper known to man... guarded by the Lara Croft. Only a wuss wouldn't watch this.",
+           "locations": ["location1", "location2", "location5", "location7", "location8"]
+       },
+       {
+           "movie": "movie2",
+           "image": "../images/rice.jpg",
+           "name": "Putting the Spice Back in the Rice",
+           "genre": "Action and Thriller",
+           "estimatedRelease": "May 2021",
+           "description": "Tachki Banana has lived in China Town for many years, running the family Spice Store that had been handed down from her mother, who in turn was given to by her mother. Her spices are the purest that one could buy for miles and for a good price. Or so that was until black market spices arrived in China Town. Large kilos of spices were being sold behind doors. Tachki sought help from the local authorities to be turned down - laughed at. This old woman knew nothing! Illegal spices? That was ridiculous! Angry and frustrated, Tachki decided she would take it in her hands. One by one, the old lady that people had dismissed, took down leaders in the spice exchange. Tachki Banana became the Batman of China Town. A super hero with a cane. It was her duty to protect the spices.",
+           "locations": ["location1", "location3", "location4", "location6", "location7", "location10"]
+       },
+       {
+           "movie": "movie3",
+           "image": "../images/Boom1.jpg",
+           "name": "The Spice Asteroid",
+           "genre": "SyFy and Action",
+           "estimatedRelease": "July 2020",
+           "description": "In this riveting sequel to 'The Popcorn is Spicy: A Love Story.' and 'Putting the Spice Back in the Rice', their knowledge of their past events and experiences will be tested. As they all stood in the China Town streets, they watched as the fiery ball of spice shoot from the sky. An asteroid made of spices! It was beautiful... beautifully deadly. Even as it flew through the sky, spices fell from the trail that it left. It landed in a thick cloud that destroyed buildings and people. Death by spices. In this movie, a newly founded trio who had discovered their taste for the unusual, banded together to save the people of their town. After the defeat of racketeers and Lara Croft, Tom, Izzy and Takchi used their magical spice wielding intuition to clear a pathway. And made lots of popcorn and rice.",
+           "locations": ["location4", "location6", "location8", "location9", "location10"]
+       }
+   ]
+} 
 

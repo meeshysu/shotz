@@ -1,4 +1,3 @@
-// import {locationBuilder} from '../components/locationComponent.js';
 
 const loadLocationsForMovies = () => {
     return new Promise((resolve, reject) => {
@@ -22,9 +21,9 @@ const matchUpLocations = (movieLocationArray) => {
         $.get('../db/locations.json')
             .done((data) => {
                 // console.log(data)
-                movieLocationArray.forEach((forEachId) => {
+                // movieLocationArray.forEach((forEachId) => {
                     data.locations.forEach((locationObject) => {
-                        if (location.id === forEachId) {
+                        if (location.id === movieLocationArray) {
                             // console.log(forEachId)
                             randomAssArrayForLocations.push(locationObject)
                             console.log(randomAssArrayForLocations)
@@ -33,12 +32,9 @@ const matchUpLocations = (movieLocationArray) => {
                 })
                 resolve(randomAssArrayForLocations)
             })
-            .fail((error) => {
-                reject('error on matchUpLocations', error);
-            })
-    })
-}
-
+            
+            }
+    
 //loop thru each id of array and also loop thru locations. 
 //if the location.id equals the single forEachId
 

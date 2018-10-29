@@ -19,17 +19,18 @@ const movieBuilder = (arrayOfMovies) => {
     arrayOfMovies.forEach((movie) => {
         stringBuilder += `
         <div id="${movie.id}" class="card movieCard">
-            <img class="card-img-top" src="${movie.image}" alt="Card image cap">
+
+            <img class="this" src="${movie.image}" alt="Card image cap">
                  <div class="card-body">
                     <h5 class="card-title">${movie.name}</h5>
                     <p class="card-text">Genre: ${movie.genre}</p>
                     <p class="card-text">Estimated Release Date: ${movie.estimatedRelease}</p>
                    <p class="card-text">Description: ${movie.description}</p>
- 
+                   <p class="card-text">Number Of Locations Shot: ${movie.locations.length}</p>
                  </div>
          </div>`;
     });
-$('#movieSpace').append(stringBuilder);
+$('#movieSpace').html(stringBuilder);
 };
 
 
@@ -58,4 +59,6 @@ const loadMoviesSomethingDifferent = (movieId) => {
 
 
 
+
 export { movieBuilder, initializeMovieBoard };
+

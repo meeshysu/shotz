@@ -5,7 +5,7 @@ const filterSearch = () => {
    let filter = $(this).val();
     $('.locationsOf').not(`:contains(${filter})`).fadeOut();
 })
-
+}
 
 
 

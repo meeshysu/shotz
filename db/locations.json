@@ -1,5 +1,6 @@
 {
     "locations": [
+        {
             "id": "location1",
             "image": "../images/Chinatown.png",
             "name": "Spice Hunting",

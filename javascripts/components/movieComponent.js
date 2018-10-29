@@ -19,7 +19,6 @@ const movieBuilder = (arrayOfMovies) => {
     arrayOfMovies.forEach((movie) => {
         stringBuilder += `
         <div id="${movie.id}" class="card movieCard">
-
             <img class="this" src="${movie.image}" alt="Card image cap">
                  <div class="card-body">
                     <h5 class="card-title">${movie.name}</h5>

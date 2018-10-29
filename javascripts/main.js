@@ -3,6 +3,7 @@ import { initializeLocationBoard } from './components/locationComponent.js';
 import { filterSearch } from './events.js';
 
 
+
 const initializeApp = () => {
     initializeMovieBoard();
     initializeLocationBoard();

@@ -30,5 +30,6 @@ const getMoviesFromLocationArray = (movieId) => {
         })
     })
 }
-//all of this shit is literally just getting your array of location ids for the movies. so if movieId is equal to the actual id of the movie then just goes to movie.locations. .locations returns that string/array whatever. that thing. 
+
 export { loadMovies, getMoviesFromLocationArray };
+

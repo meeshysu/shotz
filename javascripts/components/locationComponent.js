@@ -32,4 +32,6 @@ const initializeLocationBoard = () => {
     })
 };
 
+
 export { locationBuilder, initializeLocationBoard };
+

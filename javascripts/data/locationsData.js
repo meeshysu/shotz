@@ -1,3 +1,4 @@
+
 const loadLocationsForMovies = () => {
     return new Promise((resolve, reject) => {
         $.get('../db/locations.json')

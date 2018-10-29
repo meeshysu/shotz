@@ -3,23 +3,6 @@ body {
     background-position: fill;
 }
 
-#locationSpace {
-    margin: 5%;
-    margin-left: 15%;
-}
-
-.locationsOf {
-    display: inline-block;
-    align-content: center;
-    max-width: 20%;
-    margin: 1%;
-}
-
-.movieCard {
-    max-width: 25%;
-    margin: auto;
-}
-
 #buttonDiv {
     display: flex;
     justify-content: center;
@@ -32,6 +15,30 @@ body {
     height: 100px;
 }
 
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+.locationsOf {
+    display: inline-table;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 25.3%;
+    margin: 1%;
+    padding: auto;
+}
+
+#locationSpace {
+    margin: 5%;
+    margin-left: 16.5%;
+}
+
+.movieCard {
+    max-width: 25%;
+    margin: auto;
+}
+
 #movieSpace {
     display: flex; 
     flex-direction: row;
@@ -39,16 +46,32 @@ body {
 }
 
 .card-img-top {
-    max-height: 35%;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position: 5;
+    margin: 0 auto;
 }
 
-.banner {
-    display: flex;
-    justify-content: center;
+.this {
+    max-height: 35%;
 }
 
 #selectedMovie {
     display: flex; 
     justify-content: center;
     margin-top: 2%;
+}
+
+.active-orange-2 input[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #f1c461;
+    box-shadow: 0 1px 0 0 #f1c461;
+}
+.active-orange input[type=text] {
+    border-bottom: 1px solid #f1c461;
+    box-shadow: 0 1px 0 0 #f1c461;
+}
+
+.active-orange .fa, .active-purple-2 .fa {
+    color: #f1c461;
 }

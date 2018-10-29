@@ -5,84 +5,80 @@
             "image": "../images/Chinatown.png",
             "name": "Spice Hunting",
             "location": "China Town",
-            "shootTime": "Evening"
+            "shootTime": "Evening",
+            "moviesUsed": "The Popcorn is Spicy: A Love Story, The Spice Asteroid, Putting the Spice Back in the Rice"
         },
         {
             "id": "location2",
-            "image": "../images/Rabbits.png",
+            "image": "../images/pawnee.jpg",
             "name": "Corn Sowing",
             "location": "The Grasslands",
-            "shootTime": "Morning"
+            "shootTime": "Morning",
+            "moviesUsed": "The Popcorn is Spicy: A Love Story"
         },
         {
             "id": "location3",
-            "image": "../images/Theater.png",
-            "name": "Popcorn G",
-            "location": "Movie Theater",
-            "shootTime": "After Dark"
+            "image": "../images/TheDocks.jpg",
+            "name": "Cargo Spices",
+            "location": "The Docks",
+            "shootTime": "After Dark",
+            "moviesUsed": "Putting the Spice Back in the Rice"
         },
         {
             "id": "location4",
             "image": "../images/DailyMarket.jpg",
-            "name": "The Daily Market",
-            "location": "Detroit",
-            "shootTime": "Afternoon"
+            "name": "Veggies and Spices",
+            "location": "Daily Market in San Fran",
+            "shootTime": "Afternoon",
+            "moviesUsed": "Putting the Spice Back in the Rice, The Spice Asteroid"
         },
         {
             "id": "location5",
-            "image": "../images/Finn.png",
-            "name": "Baby Finn <3",
-            "location": "Land of Ooo",
-            "shootTime": "Afternoon"
+            "image": "../images/Thailand.jpg",
+            "name": "The Hottest Pepper",
+            "location": "Thailand Wilderness",
+            "shootTime": "Morning",
+            "moviesUsed": "The Popcorn is Spicy: A Love Story"
         },
         {
             "id": "location6",
-            "image": "../images/Finn.png",
-            "name": "Baby Finn <3",
-            "location": "Land of Ooo",
-            "shootTime": "Afternoon"
+            "image": "../images/ChinaTownHouse.jpg",
+            "name": "Takchi's House",
+            "location": "China Town",
+            "shootTime": "Afternoon",
+            "moviesUsed": "Putting the Spice Back in the Rice, The Spice Asteroid"
         },
         {
             "id": "location7",
-            "image": "../images/Finn.png",
-            "name": "Baby Finn <3",
-            "location": "Land of Ooo",
-            "shootTime": "Afternoon"
+            "image": "../images/PopcornShop.jpg",
+            "name": "Tom and Izzy's",
+            "location": "San Fran Business",
+            "shootTime": "After Dark",
+            "moviesUsed": "The Popcorn is Spicy: A Love Story, Putting the Spice Back in the Rice"
         },
         {
             "id": "location8",
-            "image": "../images/Finn.png",
-            "name": "Baby Finn <3",
-            "location": "Land of Ooo",
-            "shootTime": "Afternoon"
+            "image": "../images/Popcorn2.jpg",
+            "name": "Tom and Izzy's",
+            "location": "Pawnee Business",
+            "shootTime": "Evening",
+            "moviesUsed": "The Popcorn is Spicy: A Love Story, The Spice Asteroid"
         },
         {
             "id": "location9",
-            "image": "../images/Finn.png",
-            "name": "Baby Finn <3",
-            "location": "Land of Ooo",
-            "shootTime": "Afternoon"
+            "image": "../images/Chabot.jpg",
+            "name": "Space Center",
+            "location": "On A Hill",
+            "shootTime": "After Dark",
+            "moviesUsed": "The Spice Asteroid"
         },
         {
             "id": "location10",
-            "image": "../images/Finn.png",
-            "name": "Baby Finn <3",
-            "location": "Land of Ooo",
-            "shootTime": "Afternoon"
-        },
-        {
-            "id": "location11",
-            "image": "../images/Finn.png",
-            "name": "Baby Finn <3",
-            "location": "Land of Ooo",
-            "shootTime": "Afternoon"
-        },
-        {
-            "id": "location12",
-            "image": "../images/Finn.png",
-            "name": "Baby Finn <3",
-            "location": "Land of Ooo",
-            "shootTime": "Afternoon"
+            "image": "../images/streets.jpg",
+            "name": "The Streets",
+            "location": "San Fran",
+            "shootTime": "Evening",
+            "moviesUsed": "Putting the Spice Back in the Rice, The Spice Asteroid"
         }
     ]
 }

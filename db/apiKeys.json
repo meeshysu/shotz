@@ -1,0 +1,10 @@
+{
+  "firebaseKeys": {
+  "apiKey": "AIzaSyBVWhiy10xAKmvaaz-b4snll_W6WU-CENg",
+  "authDomain": "shotz-bd749.firebaseapp.com",
+  "databaseURL": "https://shotz-bd749.firebaseio.com",
+  "projectId": "shotz-bd749",
+  "storageBucket": "shotz-bd749.appspot.com",
+  "messagingSenderId": "421387114123"
+  }
+}
